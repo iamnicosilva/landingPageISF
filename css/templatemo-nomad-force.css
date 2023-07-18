@@ -637,6 +637,27 @@ strong {
   color: var(--primary-color);
 }
 
+
+/*---------------------------------------
+ CUSTOM NO RESPONSIVE STYLES:
+ ---------------------------------------- */
+
+ div.img-banner {
+  position: relative;
+  top: -76px;
+}
+
+div.img-banner-sm {
+  display: none;
+}
+
+
+
+
+
+
+
+
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
@@ -694,6 +715,26 @@ strong {
   .news .col-12 .news-two-column:first-child {
     margin-bottom: 38px;
   }
+
+
+
+  /* CUSTOM STYLES: */
+
+
+  div.img-banner {
+    display: none;
+  }
+
+  div.img-banner-sm {
+    display: block;
+  }
+
+  div.img-banner-sm img.img-fluid {
+    display: block;
+    width: 100%;
+  }
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -740,6 +781,8 @@ strong {
   }
 }
 
+
+
 /* CUSTOM CSS */
 
 /* #logo_isf{
@@ -758,3 +801,40 @@ h2{
 strong{
   color:#0164a5;
 }
+
+/* a.lectureship-video {
+  z-index: 9 !important;
+}
+
+iframe.lectureship-iframe * {
+  z-index: 1;
+} */
+
+
+/* div.videoWrapper {
+  object-fit: cover;
+  height: calc(100% - 76px);
+} */
+
+
+
+
+/* div.img-banner img {
+  position: inherit;
+
+} */
+
+
+
+
+/* div .img-banner {
+  position: 0px 0px;
+  position: relative;
+}
+
+div .img-banner img {
+  position: relative;
+  display: block;
+  z-index: 9;
+  position: 0px 0px;
+} */
