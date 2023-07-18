@@ -667,6 +667,13 @@ div.img-banner-sm {
   }
 }
 
+
+@media screen and (min-width: 992px) {
+  img.img-content {
+    max-width: 600px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 48px;
@@ -718,7 +725,7 @@ div.img-banner-sm {
 
 
 
-  /* CUSTOM STYLES: */
+  /* CUSTOM REAPONSIVE STYLES: */
 
 
   div.img-banner {
@@ -801,6 +808,9 @@ h2{
 strong{
   color:#0164a5;
 }
+
+
+
 
 /* a.lectureship-video {
   z-index: 9 !important;
