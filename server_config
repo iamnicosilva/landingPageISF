@@ -1,0 +1,25 @@
+nano /etc/nginx/conf.d/users/isfat.conf
+
+
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    
+    # Esto ya está:
+    root /path/to/your/angular/app;  # Reemplaza con la ruta de tu aplicación Angular
+    
+    # ESTO HAY QUE AGREGARLO:
+    index index.html;
+
+    server_name _;
+
+    location / {
+    	# ESTO HAY QUE AGREGARLO:
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Otros ajustes y configuraciones de Nginx...
+}
+
+
