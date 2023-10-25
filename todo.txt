@@ -1,0 +1,4 @@
+/configuracion servidor y despligue
+- ventana emergente
+- boton suscripcion
+

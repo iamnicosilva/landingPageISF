@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular": {
+    "isfat": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular",
+            "outputPath": "dist/isfat",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,22 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/css/aos.css",
-              "src/assets/css/customstyles.css",
-              "src/assets/css/magnific-popup.css",
-              "src/assets/css/templatemo-nomad-force.css"
+              "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "src/assets/js/custom.js",
-              "src/assets/js/jquery.magnific-popup.min.js",
-              "src/assets/js/jquery.sticky.js",
-              "src/assets/js/magnific-popup-options.js",
-              "src/assets/js/scrollspy.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -73,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular:build:production"
+              "browserTarget": "isfat:build:production"
             },
             "development": {
-              "browserTarget": "angular:build:development"
+              "browserTarget": "isfat:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular:build"
+            "browserTarget": "isfat:build"
           }
         },
         "test": {
@@ -109,4 +96,3 @@
     }
   }
 }
-

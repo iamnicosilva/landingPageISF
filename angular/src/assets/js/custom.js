@@ -4,7 +4,7 @@
   "use strict";
 
     // AOS ANIMATIONS
-    AOS.init();
+    // AOS.init();
 
     // NAVBAR
     $('.navbar-nav .nav-link').click(function(){

@@ -11,6 +11,7 @@ import { CongressComponent } from './section/congress/congress.component';
 import { ContactComponent } from './section/contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeroComponent } from './hero/hero.component';
     CongressComponent,
     ContactComponent,
     NavbarComponent,
-    HeroComponent
+    HeroComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
