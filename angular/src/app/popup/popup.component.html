@@ -1,1 +1,18 @@
-<p>popup works!</p>
+<div class="background" style="{{ showPopup }}">
+    <div class="container p-3 p-lg-5">
+        <div class="row m-auto text-center">
+            <div class="col-12 m-auto">
+                <h2 class="mb-3 fs-4">Welcome!</h2>
+            </div>
+            <div class="col-12 mt-3 mb-lg-5">
+                <p class="me-4">Visit the 'ISF Lectureship Series Awards' section to see the latest award-winning lectures.</p>
+            </div>
+            <div class="col-sm-6 col-12 mb-3">
+                <button type="button" class="btn btn-primary" (click)="closePopup()">Cancel</button>
+            </div>
+            <div class="col-sm-6 col-12">
+                <button type="button" class="btn btn-primary"  (click)="goToLecture()">Visit</button>
+            </div>
+        </div>
+    </div>
+</div>

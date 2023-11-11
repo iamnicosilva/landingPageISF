@@ -1,0 +1,20 @@
+div.background{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #00000075;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container {
+    background: #fff;
+    max-width: 540px;
+}
+
+button.btn-primary {
+    background-color: #0164a5 !important;
+}
+

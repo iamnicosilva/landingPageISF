@@ -17,14 +17,26 @@
             <div class="col-lg-7 col-12 mx-auto">
                 
                 <h2 class="mb-2 text-center" data-aos="fade-up">Suscribe</h2>
-                
-                <!-- <p data-aos="fade-up" data-aos-delay="200">
-                    ### Botón para suscribirse a novedades del nombre y que notifique pronto habrá más novedades. ###
-                </p> -->
+                <form (submit)="onSubmit()">
+                    <div class="mb-3">
+                      <label for="inputName" class="form-label">Name</label>
+                      <input type="name" class="form-control" id="inputName" [(ngModel)]="formData.name" name="name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" [(ngModel)]="formData.email" name="email" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-
+    </section>
+    
+    <!-- <p data-aos="fade-up" data-aos-delay="200">
+        ### Botón para suscribirse a novedades del nombre y que notifique pronto habrá más novedades. ###
+    </p> -->
+    
+    
+    

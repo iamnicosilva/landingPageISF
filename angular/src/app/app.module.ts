@@ -12,6 +12,9 @@ import { ContactComponent } from './section/contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { PopupComponent } from './popup/popup.component';
+import { SubnavbarComponent } from './section/subnavbar/subnavbar.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { PopupComponent } from './popup/popup.component';
     ContactComponent,
     NavbarComponent,
     HeroComponent,
-    PopupComponent
+    PopupComponent,
+    SubnavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

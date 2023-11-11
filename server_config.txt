@@ -9,17 +9,20 @@ server {
     # Esto ya está:
     root /path/to/your/angular/app;  # Reemplaza con la ruta de tu aplicación Angular
     
-    # ESTO HAY QUE AGREGARLO:
+    # ESTO HAY QUE AGREGARLO (NO HACE FALTA):
     index index.html;
 
     server_name _;
 
     location / {
-    	# ESTO HAY QUE AGREGARLO:
+    	# ESTO HAY QUE AGREGARLO (CON ESTO SOLO FUNCIONA):
         try_files $uri $uri/ /index.html;
     }
 
     # Otros ajustes y configuraciones de Nginx...
 }
+
+sudo systemctl restart nginx
+
 
 
