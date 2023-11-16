@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
 import * as AOS from 'aos'; // Importa AOS
 declare var $: any; // Declaración de jQuery
 
@@ -9,9 +9,20 @@ declare var $: any; // Declaración de jQuery
   styleUrls: ['./navbar.component.css']
 })
 
-export class NavbarComponent implements AfterViewInit {
+export class NavbarComponent implements AfterViewInit, OnInit {
   title = 'navbar';
   ngAfterViewInit() {
+    $(document).ready(()=> {
+      // this.initJqueryAOS();
+      console.log('ngAfterViewInit del navbar');
+    })
+  }
+
+  ngOnInit(): void {
+    console.log('ngOnInit del navbar')
+  }
+
+  private initJqueryAOS(){
     AOS.init();
     // Inicialización de Bootstrap (si es necesario)
     $('[data-toggle="tooltip"]').tooltip();
@@ -19,6 +30,7 @@ export class NavbarComponent implements AfterViewInit {
     // Otras inicializaciones de jQuery
   }
 }
+
 
 
 

@@ -1,3 +1,12 @@
 "src/assets/css/bootstrap.min.css",
               "src/assets/js/jquery.min.js",
               "src/assets/js/bootstrap.bundle.min.js",
+
+
+cargó sticky
+main.2e8e225a976b7536.js:1 ngOn
+main.2e8e225a976b7536.js:1 ngOnInit del navbar
+main.2e8e225a976b7536.js:1 antes ngAv
+main.2e8e225a976b7536.js:1 desp ngAv
+main.2e8e225a976b7536.js:1 ngAfterViewInit del navbar
+

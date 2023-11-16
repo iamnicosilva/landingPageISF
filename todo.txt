@@ -2,7 +2,7 @@
 - ventana emergente
 - boton suscripcion
 
-quiero sacar el cors, que angular se sirva en 8443 en vez de 443
 renderizado de navbar
 algun estilo que indique la seccion activa en el navbar
 mensaje de successfull en envio de formulario y limpieza de campos
+quiero sacar el cors, que angular se sirva en 8443 en vez de 443

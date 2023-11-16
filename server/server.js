@@ -5,15 +5,16 @@ const bodyParser = require('body-parser');
 const https = require('https');
 const fs = require('fs');
 const cors = require('cors');
+const path = require('path');
 
-require('dotenv').config();
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 app.use(bodyParser.json());
 app.use(cors());
 
 const options = {
-  cert: fs.readFileSync('../../../ssl/certs/test_isfat_org_c571f_68949_1704931199_85386d88f24f1b173e37c6cade19cb7b.crt'),
-  key: fs.readFileSync('../../../ssl/keys/c571f_68949_1912375c6270496574d716cc0a3e6376.key')
+  cert: fs.readFileSync(path.resolve(__dirname, '../../../ssl/certs/test_isfat_org_c571f_68949_1704931199_85386d88f24f1b173e37c6cade19cb7b.crt')),
+  key: fs.readFileSync(path.resolve(__dirname, '../../../ssl/keys/c571f_68949_1912375c6270496574d716cc0a3e6376.key'))
 };
 
 console.log('cert: ')
@@ -27,10 +28,10 @@ const server = https.createServer(options, app);
 
 // Configura la conexión a la base de datos
 const db = mysql.createConnection({
-  host: process.env.HOST,
-  user: process.env.USUARIO,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE
+  host: process.env.HOST1,
+  user: process.env.USUARIO1,
+  password: process.env.PASSWORD1,
+  database: process.env.DATABASE1
 });
 
 db.connect(err => {

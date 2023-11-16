@@ -226,11 +226,12 @@ strong {
 }
 
 .navbar-nav .nav-link::after {
-  content: "\f140";
-  font-family: bootstrap-icons;
+  /* content: "\f140"; */
+  /* font-family: bootstrap-icons; */
   display: inline-block;
   margin-left: 10px;
   color: var(--primary-color);
+  color: #198754;
   opacity: 0;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   -moz-transition: opacity 0.3s, -moz-transform 0.3s;
