@@ -9,46 +9,27 @@ declare var $: any; // Declaración de jQuery
   styleUrls: ['./navbar.component.css']
 })
 
-export class NavbarComponent implements AfterViewInit, OnInit {
+export class NavbarComponent implements AfterViewInit {
+
   title = 'navbar';
+
   ngAfterViewInit() {
     $(document).ready(()=> {
-      // this.initJqueryAOS();
-      console.log('ngAfterViewInit del navbar');
+      // CHEQUEO SI SE RENDERIZÓ BIEN EL DIV:
+      this.checkStickyWrapper();
+      AOS.init();
     })
   }
 
-  ngOnInit(): void {
-    console.log('ngOnInit del navbar')
-  }
 
-  private initJqueryAOS(){
-    AOS.init();
-    // Inicialización de Bootstrap (si es necesario)
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-toggle="popover"]').popover();
-    // Otras inicializaciones de jQuery
+  private checkStickyWrapper() {
+    
+    const div = $(document.getElementById('sticky-wrapper'));
+
+    if (!div[0]) {
+      location.reload();
+    } 
+    
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-navbar',
-//   templateUrl: './navbar.component.html',
-//   styleUrls: ['./navbar.component.css']
-// })
-// export class NavbarComponent {
-
-// }
 
